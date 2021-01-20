@@ -34,7 +34,12 @@ const actions = {
     }
 
     try {
-      shell.exec(`git clone ${TEMPLATE_REPOSITORY_URL} ${path}`)
+      const clone = shell.exec(`git clone ${TEMPLATE_REPOSITORY_URL} ${path}`)
+      if (clone.code !== 0) {
+        shell.echo('이 cli는 굿닥 내부에서 사용하도록 만들어 졌어요.')
+        shell.echo('굿닥몬이시라면, Goodoc Github 초대 요청해주세요!')
+        return
+      }
       console.log('Template 가져오기 완료!')
       console.log('외부 라이브러리를 설치합니다.')
       shell.exec(`cd ${path} && rm -rf .git && yarn install`)
