@@ -5,7 +5,7 @@
   "scripts": {},
   "main": "index.js",
   "bin": {
-    "gsc": "./index.js"
+    "grc": "./index.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
   "keywords": [
     "npm",
     "goodoc",
+    "react-cli",
     "cli"
   ],
   "homepage": "https://github.com/devdany"
