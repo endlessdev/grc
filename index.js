@@ -37,7 +37,7 @@ const actions = {
       shell.exec(`git clone ${TEMPLATE_REPOSITORY_URL} ${path}`)
       console.log('Template 가져오기 완료!')
       console.log('외부 라이브러리를 설치합니다.')
-      shell.exec(`cd ${path} && pwd && yarn install`)
+      shell.exec(`cd ${path} && rm -rf .git && yarn install`)
       console.log('설치 완료!')
       console.log(`${process.cwd()}/${path} 디렉토리안에서, 다음과 같은 명령어를 실행하실 수 있습니다.`)
       console.log('')
