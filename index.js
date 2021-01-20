@@ -52,7 +52,7 @@ const actions = {
       console.log('')
       console.log('----------------------------------------')
       console.log('간단한 샘플코드가 포함되어 있으니 참고하셔도 좋아요.')
-      console.log('gfc help에서 편하게 사용할 수 있는 명령어들을 확인하세요. 이 명령어들은 프로젝트 내부 루트경로에서 사용해주세요.')
+      console.log('grc help에서 편하게 사용할 수 있는 명령어들을 확인하세요. 이 명령어들은 프로젝트 내부 루트경로에서 사용해주세요.')
       console.log('즐코딩! 굿닥몬 화이팅!')
     } catch (e) {
       console.error(e);
@@ -84,21 +84,21 @@ const actions = {
     fs.writeFileSync(`${styledPath}`, templates.styled)
   },
   help: () => {
-    console.log('gfc create ${name}')
+    console.log('grc create ${name}')
     console.log('  현재위치에서 입력한 name 경로로 템플릿을 생성합니다.')
     console.log('---------------')
-    console.log('gfc at ${name}')
+    console.log('grc at ${name}')
     console.log('  atom 컴포넌트를 생성합니다.')
     console.log('---------------')
-    console.log('gfc mo ${name}')
+    console.log('grc mo ${name}')
     console.log('  mocules 컴포넌트를 생성합니다.')
     console.log('---------------')
-    console.log('gfc or ${name}')
+    console.log('grc or ${name}')
     console.log('  organisms 컴포넌트를 생성합니다.')
     console.log('---------------')
-    console.log('gfc te ${name}')
+    console.log('grc te ${name}')
     console.log('  template 컴포넌트를 생성합니다.')
-    console.log('gfc pg ${name}')
+    console.log('grc pg ${name}')
     console.log('  page 및 page 컴포넌트를 생성합니다.')
   }
 
