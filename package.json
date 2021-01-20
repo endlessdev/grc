@@ -1,0 +1,35 @@
+{
+  "name": "goodoc-react-cli",
+  "version": "1.0.0",
+  "description": "goodoc react cli",
+  "scripts": {},
+  "main": "index.js",
+  "bin": {
+    "gsc": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goodoc/grc"
+  },
+  "author": {
+    "name": "devdany",
+    "email": "dayong7387@gmail.com",
+    "url": "https://github.com/devdany"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goodoc/grc/issues"
+  },
+  "dependencies": {
+    "commander": "^6.2.1",
+    "inquirer": "^7.3.3",
+    "lodash": "^4.17.20",
+    "shelljs": "^0.8.4"
+  },
+  "keywords": [
+    "npm",
+    "goodoc",
+    "cli"
+  ],
+  "homepage": "https://github.com/devdany"
+}
